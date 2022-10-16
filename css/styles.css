@@ -82,12 +82,12 @@ body {
 
 }
 
-.container img {
 
-    border-top-left-radius: 1em;
-    border-bottom-left-radius: 1em;
-    object-fit: cover;
-    
+.description-wrapper{
+    width: 50%;
+}
+.picture-wrapper{
+    width: 50%;
 }
 
 .description-container {
@@ -123,6 +123,7 @@ body {
     color: var(--darkgrayishBlue);
     letter-spacing: .01em;
     margin-bottom: 1em;
+    
 
 }
 
@@ -168,20 +169,35 @@ body {
 }
 .image2{
     display:none;
+    
 }
+.image1{
+    height: 100%;
+    border-radius: 1em 0 0 1em;
+}
+
 @media all and (max-width: 1120px){
     .container{
         margin: 1.5em auto;
         flex-direction: column;
         width: 75%;
     }
+    .description-wrapper{
+        width: 100%;
+    }
+    .picture-wrapper{
+        width: 100%;
+    
+    }
     .image1{
         display: none;
+        
       }
    
       .image2{
         display: block;
         width: 100%;
+        border-radius: 1em 1em 0 0;
       }
       .cta{
         width: 100%;
