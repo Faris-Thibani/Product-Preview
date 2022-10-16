@@ -171,6 +171,7 @@ body {
 }
 @media all and (max-width: 1120px){
     .container{
+        margin: 1.5em auto;
         flex-direction: column;
         width: 75%;
     }
